@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device_width, initial-scale=1.0" />
-    <title>Find- kokoa Talk</title>
+    <title>Welcome to kokoa Talk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,65 +25,55 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">Friends</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
-        <div class="red-dot"></div>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="screenshots/내사진.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Jayden</h4>
+            <!--<h6 class="user-component__subtitle">whatever text</h6> -->
+          </div>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-address-book"></i>
-          <span>Add by Contacts</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-fingerprint"></i>
-          <span>Add by ID</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="far fa-envelope"></i>
-          <span>Invite</span>
-        </div>
+        <div class="user-component__column"></div>
       </div>
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends</span>
-      </div>
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4>Open Chat</h4>
-          <span
-            >Go to Openchat Home<i class="fas fa-chevron-right fa-xs"></i
-          ></span>
+      <!--main profile-->
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
         </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtag">#bts#army#friends</h6>
-            <div class="open-post__member">
-              <img
-                src="file:///C:/Users/JaeMin/Desktop/kokoa-clone-2020/screenshots/%EB%82%B4%EC%82%AC%EC%A7%84.jpg"
-              />
-              <span class="open-post__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="screenshots/내사진.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title--not-bold">Channel</h4>
+              <!--<h6 class="user-component__subtitle">whatever text</h6> -->
             </div>
           </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img
-                src="C:\Users\JaeMin\Desktop\kokoa-clone-2020\screenshots\a.jpg"
-              />
-              <div class="open-post__heart-count">
-                <i class="fas fa-heart fa-xs"></i><span>326</span>
-              </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
             </div>
           </div>
         </div>
@@ -94,7 +84,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
+            ><i class="fas fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -116,6 +106,11 @@
         </li>
       </ul>
     </nav>
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i
+        ></a>
+    </div>
+
     <div id="no-mobile">
       <span>Your screen is too big</span>
     </div>

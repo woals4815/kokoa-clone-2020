@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device_width, initial-scale=1.0" />
-    <title>Setting- kokoa Talk</title>
+    <title>Chats- kokoa Talk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,41 +24,38 @@
         <!--Lightning Icon-->
       </div>
     </div>
-
-    <header class="alt-header">
-      <div class="alt-header__column">
-        <a href="more.html"><i class="fas fa-angle-left fa-2x"></i></a>
-      </div>
-      <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
-      </div>
-      <div class="alt-header__column">
-        <i class="fas fa-search fa-lg"></i>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
     <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings-setting">
-          <div class="settings-settling__column">
-            <i class="fas fa-bullhorn"></i>
-            <span>Notices</span>
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="screenshots/내사진.jpg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Jayden</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kakao Account info
+              </h6>
+            </div>
           </div>
-          <div class="settings-settling__column"></div>
-        </li>
-        <li class="settings-setting">
-          <div class="settings-settling__column">
-            <i class="fas fa-flask"></i> <span>Kokoa lab</span>
+          <div class="user-component__column">
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
           </div>
-          <div class="settings-settling__column"></div>
-        </li>
-        <li class="settings-setting">
-          <div class="settings-settling__column">
-            <i class="fas fa-info-circle"></i> <span>Version</span>
-          </div>
-          <div class="settings-settling__column">Latest Version</div>
-        </li>
-      </ul>
+        </div>
+      </a>
+      <!--main profile-->
     </main>
 
     <nav class="nav">
@@ -71,7 +68,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i
+            <i class="fas fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
